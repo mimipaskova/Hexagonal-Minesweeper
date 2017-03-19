@@ -1,0 +1,395 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"user",
+				"user"
+			],
+			[
+				"re",
+				"reject"
+			],
+			[
+				"we",
+				"weightEdge"
+			],
+			[
+				"al",
+				"allWeights"
+			],
+			[
+				"min",
+				"minWeight"
+			],
+			[
+				"ed",
+				"edgee"
+			],
+			[
+				"pa",
+				"path"
+			],
+			[
+				"dis",
+				"distance"
+			],
+			[
+				"pre",
+				"previousNodes"
+			],
+			[
+				"parent",
+				"parentId"
+			],
+			[
+				"state",
+				"states"
+			],
+			[
+				"sta",
+				"startId"
+			],
+			[
+				"fin",
+				"findPath"
+			],
+			[
+				"edges",
+				"edges"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"Ma",
+				"MaxFlowIterator"
+			],
+			[
+				"ha",
+				"handleMaxFlowIterator"
+			],
+			[
+				"han",
+				"handleAStarIterator"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"ite",
+				"itemDetails"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/C/Mimi/Development/MEAN project/doIt/app/login/login.js",
+		"/C/Mimi/Development/MEAN project/doIt/.eslintrc.js",
+		"/C/Mimi/SU/Magistratura/DAA2/Project/Flows/graph.js",
+		"/C/Mimi/SU/Magistratura/DAA2/Project/Flows/main.js",
+		"/C/Mimi/SU/Magistratura/DAA2/Project/Flows/index.html",
+		"/C/Mimi/SU/Magistratura/DAA2/Project/Graph-Simulation/src/client/index.html",
+		"/C/Mimi/Development/MEAN project/doIt/app/login/login.html",
+		"/C/Mimi/Development/MEAN project/doIt/app/index.js",
+		"/C/Mimi/Development/MEAN project/doIt/app/index.html",
+		"/C/Mimi/Development/MEAN project/doIt/package.json",
+		"/C/Mimi/Work/games-index-master-42f8d3e4cc8dfcc7eca36acd4a9a23ddb29f739c/games-index-master-42f8d3e4cc8dfcc7eca36acd4a9a23ddb29f739c/client/app/index.html",
+		"/C/Mimi/Development/MEAN project/doIt/webpack.config.js",
+		"/C/Mimi/Development/MEAN project/doIt/dist/bundle.js",
+		"/C/Mimi/Development/MEAN project/doIt/app.js",
+		"/C/Mimi/Development/MEAN project/doIt/index.html",
+		"/C/Users/Mimi/Downloads/umongo-windows-all_1-6-2/README.rst",
+		"/C/Mimi/SU/Magistratura/ML/Project/IR_NLP_Etsy/client/node_modules/ionic-angular/css/ionic.css",
+		"/C/Mimi/SU/Magistratura/ML/Project/IR_NLP_Etsy/client/node_modules/ionic-angular/components/alert/alert.ios.scss",
+		"/C/Mimi/SU/Magistratura/ML/Project/IR_NLP_Etsy/client/package.json",
+		"/C/Mimi/SU/Magistratura/ML/Project/Dumping data/categories.json",
+		"/C/Mimi/Development/Graphs/Graph-Simulation/package.json",
+		"/C/Mimi/Development/Graphs/Graph-Simulation/src/server.js",
+		"/C/Users/Mimi/Downloads/example.json",
+		"/C/Mimi/SU/Magistratura/ML/Project/Dumping data/package.json",
+		"/C/Mimi/SU/Magistratura/ML/Project/Dumping data/Mydata.txt",
+		"/C/Users/Mimi/Downloads/dataDumper/category_listings_dumper.js",
+		"/C/Mimi/SU/Magistratura/ML/Project/Dumping data/category_listings_dumper.js",
+		"/C/Users/Mimi/Downloads/dataDumper/categories.json",
+		"/C/Mimi/Development/Graphs/Graph-Simulation/index.js",
+		"/C/Mimi/SU/Magistratura/UP/IP_SI_2016/2016.10.20_Conditionals/readme.md",
+		"/C/Users/Mimi/Downloads/DynamicArray/DataStructures/DynArray/dynArray.h",
+		"/C/Users/Mimi/Downloads/DynamicArray/DataStructures/DynArray/Source.cpp",
+		"/C/Users/Mimi/Downloads/DynamicArray/DataStructures/DynArray/DAIterator.hpp",
+		"/C/Users/Mimi/Downloads/DynamicArray/DataStructures/DynArray/DynArray.hpp",
+		"/C/Mimi/SU/Magistratura/UP/IP_SI_2016/2016.11.17_Arrays/homework.md",
+		"/C/Mimi/SU/SDA/SDA_SI_2016/2016.11.29_07_Sort_Search/README.md",
+		"/C/Mimi/SU/Magistratura/UP/IP_SI_2016/2016.10.13_Basics/readme.md",
+		"/C/Users/Mimi/Downloads/DynamicArray/DataStructures/DynArray/DynArray.vcxproj.filters",
+		"/C/Users/Mimi/Downloads/DynamicArray/DataStructures/DynArray/DynArray.vcxproj"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			"-node_modules/** -*.css",
+			"-node_modules/**",
+			"-*node_modules/",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"react",
+			"reac",
+			"session",
+			"    \n",
+			"db",
+			"renderNo",
+			"renderEdges",
+			"GraphManager",
+			"removeNode",
+			"removeEdge",
+			"addEdge",
+			"weight",
+			"addEdge",
+			"edge",
+			"chain",
+			"minFlow",
+			"Flow",
+			"min",
+			"console.log",
+			"reset",
+			"isClosed",
+			"previousNodes",
+			"DijkstraIterator",
+			"Dijkstra",
+			"console.log",
+			"weight",
+			"BFSIterator",
+			"initializeIterator",
+			"()",
+			"next()",
+			"BFSIterator",
+			"createEdge",
+			"maxFlow",
+			"createEdge",
+			"maxFlow",
+			"renderText",
+			"fillText",
+			"previous",
+			"weight",
+			"MaxFlow",
+			"weight",
+			"BFS",
+			"_",
+			"weight",
+			"start",
+			"states",
+			"AStarIterator",
+			"next",
+			"неьт",
+			"startIterator",
+			"next",
+			"BFS",
+			"next",
+			"DFSIterator",
+			"next",
+			"previous",
+			"next",
+			"start",
+			"startIterator",
+			"selectNodeForConnecting",
+			"startIterator",
+			"handleAStarIterator",
+			"start",
+			"BFSIterator.prototype.start",
+			"start",
+			"heuristic",
+			"AStarIterator",
+			"handleAStarIterator",
+			"AStar",
+			"algorithms",
+			"getContext",
+			"Hello webpack",
+			"bundle.js",
+			"Hello webpack",
+			"require('lodash')",
+			"lodash",
+			"_.filter",
+			"getSimilarItems",
+			"$colors",
+			"itemDetails",
+			"ion-badge",
+			"infinite scroll",
+			"ETSY_API_KEY",
+			"bath_and_beauty/oil/aromatherapy",
+			"readCategoriesFile",
+			"supplies/bead/polymer_clay",
+			"supplies",
+			"supplies/bead",
+			"vintage",
+			"precious_stone",
+			"getListingsFromCategory",
+			"finishCategory ",
+			"cons"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"renderer",
+				"Graph-Simulation\\src\\renderer.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
