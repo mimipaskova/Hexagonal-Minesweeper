@@ -7,11 +7,9 @@ var Game = React.createClass({
     },
 
     drawTable: function() {
-        console.log("drawTable");
         const table = [];
-        // this.setState({children: this.props.table});
-        for(var i = 0; i < this.props.table; i ++) {
-            for(var j = 0; j < this.props.table; j ++) {
+        for(var i = 0; i < this.props.tableX; i ++) {
+            for(var j = 0; j < this.props.tableY; j ++) {
                 table.push(<Cell neghMines = {i} key={"cell_" + i + "_" + j}/>);
             }
             table.push(<br key={"newLine_" + i}/>);
@@ -22,7 +20,7 @@ var Game = React.createClass({
 
 		return (
             <div>
-                <h1>Table will be {this.props.table}</h1>
+                <h1>Table will be {this.props.tableX} x {this.props.tableY}</h1>
                 <button onClick = {this.drawTable}>drawTable
                 </button>
                 <div>
