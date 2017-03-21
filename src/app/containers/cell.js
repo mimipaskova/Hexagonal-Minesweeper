@@ -4,7 +4,7 @@ var Cell = React.createClass({
 	render: function () {
 
 		return (
-            <span>{this.props.neghMines}!</span>
+            <span>{this.props.isMine} </span>
         );
 	}
 });

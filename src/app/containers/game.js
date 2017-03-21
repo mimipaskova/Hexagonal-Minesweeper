@@ -3,18 +3,28 @@ import Cell from './cell';
 
 var Game = React.createClass({
     getInitialState: function() {
-        return {table: []};
+        return {table: [], possibleMines: this.props.allMines};
+    },
+    countMines: function() {
+        var isMine = Math.floor(Math.random() * 2);
+        if(this.state.possibleMines == 0) {
+            return 0;
+        }
+        if(this.state.possibleMines > 0 && isMine == 1) {
+            this.state.possibleMines--;
+        }
+        return isMine;
     },
 
     drawTable: function() {
         const table = [];
         for(var i = 0; i < this.props.tableX; i ++) {
             for(var j = 0; j < this.props.tableY; j ++) {
-                table.push(<Cell neghMines = {i} key={"cell_" + i + "_" + j}/>);
+                table.push(<Cell neghMines = {i} key={"cell_" + i + "_" + j} isMine = {this.countMines()} />);
             }
             table.push(<br key={"newLine_" + i}/>);
         }
-        this.setState({table: table});
+        this.setState({table: table, possibleMines: this.props.allMines});
     },
 	render: function () {
 

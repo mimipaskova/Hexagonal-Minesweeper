@@ -6,7 +6,7 @@ var Start = React.createClass({
     console.log("start game with ");
   },
   getInitialState: function () {
-    return {tableX: 0, tableY: 0, mines: 0};
+    return {tableX: 5, tableY: 5, mines: 5};
   },
   handleChange: function (name, event) {
     this.setState({[name]: event.target.value});
@@ -31,7 +31,7 @@ var Start = React.createClass({
               <input type="text" value={this.state.mines} onChange={this.handleChange.bind(this, 'mines')} />
             </label>
           </form>
-          <Game tableX = {this.state.tableX} tableY = {this.state.tableY}/>
+          <Game tableX = {this.state.tableX} tableY = {this.state.tableY} allMines = {this.state.mines}/>
         </div>
     );
 	}
