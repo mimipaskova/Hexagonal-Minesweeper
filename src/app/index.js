@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
 import Start from './containers/start';
+import Game from './containers/game';
 
 const render = (Component, id) => {
   ReactDOM.render(
