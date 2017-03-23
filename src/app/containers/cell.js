@@ -8,23 +8,26 @@ var Cell = React.createClass({
         return {cell: hexa};
     },
     clickCell: function () {
-        if(this.props.isMine) {
-            this.stopGame();
-        } else {
-            this.openCell();
-        }
-    },
-    stopGame: function () {
-        alert("You die");
-    },
-    openCell: function () {
-        var info = <span onClick = {this.clickCell}>{this.props.isMine} {this.props.neighMines} &nbsp; &nbsp;</span>;
+        var info = <span onClick = {this.clickCell}>{this.props.neighMines} &nbsp; &nbsp;</span>;
         this.setState({cell: info});
+         this.props.clickCell(this);
     },
 	render: function () {
 
 		return (
-            <span>
+            <span className="cell">
+                {/*if(this.props.isOpended) {
+                    return (
+                        <span onClick = {this.clickCell}>{this.props.isMine} {this.props.neighMines} &nbsp; &nbsp;</span>
+                    )
+                } else {
+                    return (
+                        <img  onClick = {this.clickCell}
+                src={"../assets/images/mine.jpg"}>
+                </img>
+                    )
+                }*/}
+
                 {this.state.cell}
             </span>
         );

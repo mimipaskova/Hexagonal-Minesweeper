@@ -5,7 +5,7 @@ import Cell from './cell';
 
 var Game = React.createClass({
     getInitialState: function() {
-        return {table: [], possibleMines: this.props.allMines, minesTable: []};
+        return {table: [], possibleMines: this.props.allMines, minesTable: [], currentScore: 0, userName: ""};
     },
     generateMines: function() {
         const allCells = this.props.tableX * this.props.tableY;
@@ -29,7 +29,9 @@ var Game = React.createClass({
                     <Cell 
                         key={"cell_" + i + "_" + j} 
                         isMine = {this.state.minesTable[this.props.tableX * i + j].mines} 
-                        neighMines = {this.state.minesTable[this.props.tableX * i + j].neighMines} />);
+                        neighMines = {this.state.minesTable[this.props.tableX * i + j].neighMines}
+                        clickCell = {this.clickCell}
+                        />);
             }
             table.push(<br key={"newLine_" + i}/>);
         }
@@ -50,6 +52,33 @@ var Game = React.createClass({
             }
         })
     },
+    clickCell: function (cell) {
+        if(cell.props.isMine) {
+            this.gameOver(cell);
+        } else {
+            this.openCell(cell);
+        }
+    },
+    gameOver: function () {
+        alert("You die write your name and save it");
+        console.log("you die", this.state.currentScore, this.props.tableX * this.props.tableY);
+
+        // this.drawTable();
+        // this.saveResult();
+    },
+    handleChange: function (name, event) {
+        this.setState({userName: event.target.value});
+    },
+    openCell: function (cell) {
+        this.state.currentScore ++;
+    },
+    saveResult: function () {
+        // var users = localStorage.getItem("users") == null ? [] : [localStorage.getItem("users")];
+        // users.push({score: this.state.currentScore,all: this.props.tableX * this.props.tableY});
+        localStorage.setItem(
+            this.state.userName,
+            JSON.stringify({score: this.state.currentScore,all: this.props.tableX * this.props.tableY - this.state.possibleMines}));
+    },
 	render: function () {
 
 		return (
@@ -60,6 +89,12 @@ var Game = React.createClass({
                 <div>
                     {this.state.table}
                 </div>
+                <label>
+                    Your name
+                    <input type="text" value={this.state.userName} onChange={this.handleChange.bind(this, 'userName')} />
+                </label>
+                <button onClick = {this.saveResult}>SaveResult
+                </button>
             </div>
         );
 	}
