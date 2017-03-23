@@ -1,7 +1,7 @@
 {
-  "name": "09-es6-webpack2-lab",
+  "name": "Hexagonal-Minesweeper",
   "version": "0.1.0",
-  "description": "my first es6 project",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --hot --progress --port 3000",
@@ -11,20 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iproduct/course-node-express-react.git"
+    "url": ""
   },
   "keywords": [
     "es6",
     "webpack",
     "babel",
-    "clock"
+    "hexagonal",
+    "minesweeper"
   ],
-  "author": "Trayan Iliev",
+  "author": "Maria Paskova",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/iproduct/course-node-express-react/issues"
-  },
-  "homepage": "https://github.com/iproduct/course-node-express-react#readme",
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",
