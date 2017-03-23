@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import Popup from 'react-popup';
 
 import Cell from './cell';
 
@@ -16,7 +17,7 @@ var Game = React.createClass({
             .value();
     },
 
-    drawTable: function() {
+    createTable: function() {
         this.generateMines();
         this.countMines();
         const table = [], cells = [];
@@ -60,10 +61,11 @@ var Game = React.createClass({
         }
     },
     gameOver: function () {
-        alert("You die write your name and save it");
+        this.showPopupAndSave();
+        // alert("You die write your name and save it");
         console.log("you die", this.state.currentScore, this.props.tableX * this.props.tableY);
 
-        // this.drawTable();
+        // this.createTable();
         // this.saveResult();
     },
     handleChange: function (name, event) {
@@ -71,6 +73,26 @@ var Game = React.createClass({
     },
     openCell: function (cell) {
         this.state.currentScore ++;
+    },
+    showPopupAndSave: function () {
+        var score = this.state.currentScore;
+        var allPoints = this.props.tableX * this.props.tableY - this.state.possibleMines;
+        Popup.prompt('Type your name below', 'What\'s your name?', {
+            placeholder: 'Placeholder yo',
+            type: 'text'
+        }, {
+            text: 'Save',
+            className: 'success',
+            action: function (Box) {
+                localStorage.setItem(
+                    Box.value,
+                    JSON.stringify({
+                        score: score,
+                        all: allPoints})
+                );
+                Box.close();
+            }
+        });
     },
     saveResult: function () {
         // var users = localStorage.getItem("users") == null ? [] : [localStorage.getItem("users")];
@@ -84,7 +106,7 @@ var Game = React.createClass({
 		return (
             <div>
                 <h1>Table will be {this.props.tableX} x {this.props.tableY}</h1>
-                <button onClick = {this.drawTable}>drawTable
+                <button onClick = {this.createTable}>show table with mines
                 </button>
                 <div>
                     {this.state.table}

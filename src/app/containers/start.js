@@ -6,7 +6,7 @@ var Start = React.createClass({
     console.log("start game with ");
   },
   getInitialState: function () {
-    return {tableX: 5, tableY: 5, mines: 5};
+    return {tableX: 3, tableY: 4, mines: 5};
   },
   handleChange: function (name, event) {
     this.setState({[name]: event.target.value});

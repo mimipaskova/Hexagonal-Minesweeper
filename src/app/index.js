@@ -4,6 +4,7 @@ import './assets/images/react-redux.png';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
+import Popup from 'react-popup';
 
 import Start from './containers/start';
 import Game from './containers/game';
@@ -18,3 +19,8 @@ const render = (Component, id) => {
 };
 
 render(Start, 'app');
+
+ReactDOM.render(
+    <Popup />,
+    document.getElementById('root')
+);
