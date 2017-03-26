@@ -1,5 +1,6 @@
 import './assets/css/main.pcss';
 import './assets/images/react-redux.png';
+import './assets/images/mine.jpg';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
